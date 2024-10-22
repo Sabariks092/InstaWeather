@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      <div className='container justify-content-center p-5 rounded' style={{ backgroundColor: "rgb(11,19,30)", boxShadow: "9px 9px 12px  rgba(0,0,0,.5)" }} >
+      <div className='container justify-content-center py-5 px-2 rounded' style={{ backgroundColor: "rgb(11,19,30)", boxShadow: "9px 9px 12px  rgba(0,0,0,.5)" }} >
         <div className='d-flex justify-content-center'>
           <input type="text" value={clickedCity} className='form-control text-center  align-items-center rounded '
             onChange={(e) => {

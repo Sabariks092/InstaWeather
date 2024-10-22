@@ -4,7 +4,7 @@ export const Forecast = ({ forecast, location}) => {
     return (
         <>
             <div >
-                <h5 className='mt-4 mb-4 text-center' style={{ color: "white", textAlign: "right" }}>Forecasting weather in <span style={{ color: "rgb(251, 255, 0)" }}>{location.name}</span> for the next <span style={{ color: "rgb(251, 255, 0)" }}>7 days</span></h5>
+                <h5 className='mt-5 mb-4 mx-3 text-center' style={{ color: "white", textAlign: "right" }}>Forecasting weather in <span style={{ color: "rgb(251, 255, 0)" }}>{location.name}</span> for the next <span style={{ color: "rgb(251, 255, 0)" }}>7 days</span></h5>
             </div>
             {forecast.forecastday.map((data, index) => {
                 return (
