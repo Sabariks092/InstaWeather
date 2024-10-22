@@ -1,0 +1,14 @@
+.card{
+    background-color:rgb(32,43,59);
+    color: aliceblue;
+}
+
+.condition-card{
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top ,img {
+    width: 100px;
+    height: 100px;
+}
