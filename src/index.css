@@ -15,5 +15,6 @@ body{
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  overflow:scroll;
+  overflow-y:scroll;
+  overflow-x:hidden ;
   background-attachment: fixed; }

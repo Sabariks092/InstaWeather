@@ -13,20 +13,20 @@ export const Forecast = ({ forecast, location}) => {
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target={`#${index}`} aria-expanded="false" aria-controls="flush-collapseOne">
                                     <div className="d-flex flex-row justify-content-evenly align-items-center text-center" style={{ color: "rgb(11,19,30)", width: "100%" }}>
-                                        <div className="p-2 "><h6>{data.date} </h6></div>
+                                        <div className=" "><h6>{data.date} </h6></div>
                                         <div className="p-2"> <img style={{ width: "60px", height: "60px" }} src={data.day.condition.icon} /></div>
                                         <div className="p-2"><h6>{data.day.condition.text}</h6></div>
-                                        <div className="p-2"><h6> Min temp in c : <span style={{ color: "green" }}> {data.day.mintemp_c}</span> </h6></div>
-                                        <div className="p-2"><h6> Max temp in c : <span  style={{ color: "red" }}>{data.day.maxtemp_c}</span></h6></div>
+                                        <div className="p-2"><h6> Min temp c : <span style={{ color: "green" }}> {data.day.mintemp_c}</span> </h6></div>
+                                        <div className="p-2"><h6> Max temp c : <span  style={{ color: "red" }}>{data.day.maxtemp_c}</span></h6></div>
                                     </div>
                                 </button>
                             </h2>
                             <div id={`${index}`} className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body">
-                                    {data.hour.map((data) => {
+                                    {data.hour.map((data,index) => {
                                         return (
                                             <>
-                                                <div className="col-12 d-flex justify-content-evenly align-items-center flex-row mb-1" style={{ width: "100%" }}>
+                                                <div id={`${index}`} className="col-12 d-flex justify-content-evenly align-items-center flex-row mb-1" style={{ width: "100%" }}>
                                                     <div className="p-2 col-2.4"><h6>{data.time}</h6></div>
                                                     <div className="p-2 col-2.4"><h6>|</h6></div>
                                                     <div className="p-2 ms-col-2.4" ><img className='' style={{ width: "50px", height: "50px" }} src={data.condition.icon} alt="" /></div>
@@ -38,7 +38,7 @@ export const Forecast = ({ forecast, location}) => {
                                                 
                                                 </div>
 
-                                               <div className='mb-4 d-flex justify-content-center'>
+                                               <div id={`${index}`} className='mb-4 d-flex justify-content-center'>
                                                 <div className="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ height: "30px", width:"75%" }}>
                                                     <div className="progress-bar " style={{  backgroundColor:"rgb(32,43,59)", width: `${data.temp_c}%`, height:"30px" }}>TEMP IN C : {data.temp_c}</div>
                                                 </div>
