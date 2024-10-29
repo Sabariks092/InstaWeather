@@ -15,9 +15,9 @@ export const Forecast = ({ forecast, location}) => {
                                     <div className="d-flex flex-row justify-content-evenly align-items-center text-center" style={{ color: "rgb(11,19,30)", width: "100%" }}>
                                         <div className=" "><h6>{data.date} </h6></div>
                                         <div className="p-2"> <img style={{ width: "60px", height: "60px" }} src={data.day.condition.icon} /></div>
-                                        <div className="p-2"><h6>{data.day.condition.text}</h6></div>
-                                        <div className="p-2"><h6> Min temp c : <span style={{ color: "green" }}> {data.day.mintemp_c}</span> </h6></div>
-                                        <div className="p-2"><h6> Max temp c : <span  style={{ color: "red" }}>{data.day.maxtemp_c}</span></h6></div>
+                                        <div className="p-2"><p>{data.day.condition.text}</p></div>
+                                        <div className="p-2"><p> Min temp c :<span style={{ color: "green" }}> {data.day.mintemp_c}</span> </p></div>
+                                        <div className="p-2"><p> Max temp c : <span  style={{ color: "red" }}>{data.day.maxtemp_c}</span></p></div>
                                     </div>
                                 </button>
                             </h2>
