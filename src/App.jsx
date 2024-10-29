@@ -100,7 +100,7 @@ function App() {
     {/* <Navbar/> */}
     <Header/>
      <div className='mx-1 a'>
-     <div className='container justify-content-center pt-5 pb-2 px-3 mb-2   rounded' style={{ backgroundColor: "rgb(8,9,11)", boxShadow: "0px 0px 15px rgb(49,191,222)" }} >
+     <div className='container justify-content-center pt-3 pb-2 px-3 mb-2   rounded' style={{ backgroundColor: "rgb(8,9,11)", boxShadow: "0px 0px 15px rgb(49,191,222)" }} >
         <div className=' subContainer mt-3 d-flex justify-content-evenly '>
           <input type="text" ref={inputData} value={clickedCity} className='form-control text-center m-1  align-items-center rounded '
             onChange={(e) => {
@@ -125,7 +125,7 @@ function App() {
         {current && <CurrentWeather current={current} location={location} />}
         {forecast && <Forecast forecast={forecast} location={location} />}
 
-        <hr className='mb-5 ' style={{color:"white", marginTop:"70px"}} />
+        <hr className='mb-4 ' style={{color:"white", marginTop:"40px"}} />
 
       </div>
      </div>
